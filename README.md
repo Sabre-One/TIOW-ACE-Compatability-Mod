@@ -8,7 +8,7 @@ At a base level, you will want to learn the following tools.
 https://community.bistudio.com/wiki/Addon_Builder
 https://community.bistudio.com/wiki/Arma_3_Publisher
 
-Any further references on how to make a mod should be simply googled.There is additional //notes in the actual files to explain what does what.
+Any further references on how to make a mod should be simply googled. There is additional //notes in the actual files to explain what does what.
 
 License Agreement, on top of our GNU variant
 1. We reserve the right to add any code with credit given to our main build.
