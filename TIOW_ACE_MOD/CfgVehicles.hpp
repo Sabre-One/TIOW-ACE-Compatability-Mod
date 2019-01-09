@@ -9,17 +9,17 @@ class CfgVehicles {
 	};
 	
 	class TIOWSpaceMarine_Base : SoldierWB {
-		class HitPoints {
+		class HitPoints { // Additional info can be found on the wiki https://community.bistudio.com/wiki/Arma_3_Soldier_Protection
 			 class HitFace
     {
-        armor = 1;
-        material = -1;
-        name = "face_hub";
-        passThrough = 0.8;
-		pen = 0.4;
-        radius = 0.08;
-        explosionShielding = 0.1;
-        minimalHit = 0.01;
+        armor = 1;  // "Healthpoints" of this hitpoint is armor value (of hitpoint) * armor value ( coefficient of the total armor defined below for the whole object
+        material = -1; // damage material (-1 means "unused")
+        name = "face_hub"; // selection name from hit points LOD in object
+        passThrough = 0.8; // coefficient defining how much damage will pass into total damage when this hit point is damaged
+	pen = 0.4; //Mod exclusive caculation
+        radius = 0.08;// size of the hit point sphere, this is how it works: https://community.bistudio.com/wiki/Arma_3_Damage_Description
+        explosionShielding = 0.1; // multiplier of explosive damage (parameter: explosive > 0 in ammunition type)
+        minimalHit = 0.01; // minimal damage value that can be applied (based on armor value), damage below this threshold is ignored
     };
     class HitNeck: HitFace
     {
@@ -27,7 +27,7 @@ class CfgVehicles {
         material = -1;
         name = "neck";
         passThrough = 0.8;
-		pen = 0.4;
+	pen = 0.4;
         radius = 0.1;
         explosionShielding = 0.5;
         minimalHit = 0.01;
@@ -38,7 +38,7 @@ class CfgVehicles {
         material = -1;
         name = "head";
         passThrough = 0.8;
-		pen = 0.4;
+	pen = 0.4;
         radius = 0.2;
         explosionShielding = 0.5;
         minimalHit = 0.01;
@@ -50,7 +50,7 @@ class CfgVehicles {
         material = -1;
         name = "pelvis";
         passThrough = 0.8;
-		pen = 0.4;
+	pen = 0.4;
         radius = 0.24;
         explosionShielding = 1;
         visual = "injury_body";
@@ -63,7 +63,7 @@ class CfgVehicles {
         material = -1;
         name = "spine1";
         passThrough = 0.8;
-		pen = 0.4;
+	pen = 0.4;
         radius = 0.16;
         explosionShielding = 1;
         visual = "injury_body";
@@ -75,7 +75,7 @@ class CfgVehicles {
         material = -1;
         name = "spine2";
         passThrough = 0.8;
-		pen = 0.4;
+	pen = 0.4;
         radius = 0.18;
         explosionShielding = 6;
         visual = "injury_body";
@@ -87,7 +87,7 @@ class CfgVehicles {
         material = -1;
         name = "spine3";
         passThrough = 0.8;
-		pen = 0.4;
+	pen = 0.4;
         radius = 0.18;
         explosionShielding = 6;
         visual = "injury_body";
@@ -99,7 +99,7 @@ class CfgVehicles {
         material = -1;
         name = "body";
         passThrough = 1;
-		pen = 0.4;
+	pen = 0.4;
         radius = 0;
         explosionShielding = 6;
         visual = "injury_body";
@@ -112,7 +112,7 @@ class CfgVehicles {
         material = -1;
         name = "arms";
         passThrough = 1;
-		pen = 0.4;
+	pen = 0.4;
         radius = 0.1;
         explosionShielding = 1;
         visual = "injury_hands";
@@ -125,7 +125,7 @@ class CfgVehicles {
         material = -1;
         name = "hands";
         passThrough = 1;
-		pen = 0.4;
+	pen = 0.4;
         radius = 0.1;
         explosionShielding = 1;
         visual = "injury_hands";
@@ -138,7 +138,7 @@ class CfgVehicles {
         material = -1;
         name = "legs";
         passThrough = 1;
-		pen = 0.4;
+	pen = 0.4;
         radius = 0.14;
         explosionShielding = 1;
         visual = "injury_legs";
@@ -151,7 +151,7 @@ class CfgVehicles {
         material = -1;
         name = "body";
         passThrough = 1;
-		pen = 0.4;
+	pen = 0.4;
         radius = 0;
         explosionShielding = 1;
         visual = "";
@@ -164,7 +164,7 @@ class CfgVehicles {
         material = -1;
         name = "hand_l";
         passThrough = 1;
-		pen = 0.4;
+	pen = 0.4;
         radius = 0.08;
         explosionShielding = 1;
         visual = "injury_hands";
@@ -180,7 +180,7 @@ class CfgVehicles {
         material = -1;
         name = "leg_l";
         passThrough = 1;
-		pen = 0.4;
+	pen = 0.4;
         radius = 0.1;
         explosionShielding = 1;
         visual = "injury_legs";
