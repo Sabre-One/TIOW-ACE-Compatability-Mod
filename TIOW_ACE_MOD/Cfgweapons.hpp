@@ -24,16 +24,16 @@ class Cfgweapons {
 			LOAD[] = {(0,0)};
 		};
 	};
-	class TIOW_Mk7Vest : SM_Gear {
+	class TIOW_Mk7Vest : SM_Gear { // For more info go to https://community.bistudio.com/wiki/Arma_3_Soldier_Protection
 
 		class ItemInfo : ItemInfo {
 
 			
 			class HitpointsProtectionInfo {
 				class Neck {
-					hitpointName = "HitNeck";
-					armor = 250;
-					passThrough = 0.1;
+					hitpointName = "HitNeck"; // reference to the hit point class defined in the man base class
+					armor = 250; // addition to armor of referenced hitpoint
+					passThrough = 0.1; // multiplier of base passThrough defined in referenced hitpoint
 				};
 				
 				class Arms {
