@@ -1,6 +1,9 @@
 # TIOW-ACE-Compatability-Mod
 This is the base code for our ACE Compatability mod
 
+HOW THIS MOD WORKS
+This mod works by applying modified hitpoint values of a SM to bring them more in line with ACE caculations. This means that marines will now be effected by both ACE based damage and medical conditions.
+
 To create your own mod, you will need the BI tools. Which a tutorial for installing them can be found here. 
 https://community.bistudio.com/wiki/Arma_3_Tools_Installation
 
