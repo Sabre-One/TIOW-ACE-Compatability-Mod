@@ -32,42 +32,49 @@ class Cfgweapons {
 			class HitpointsProtectionInfo {
 				class Neck {
 					hitpointName = "HitNeck"; // reference to the hit point class defined in the man base class
+					pen = 0.4; // Mod exclusive caculation
 					armor = 250; // addition to armor of referenced hitpoint
 					passThrough = 0.1; // multiplier of base passThrough defined in referenced hitpoint
 				};
 				
 				class Arms {
 					hitpointName = "HitArms";
+					pen = 0.4; // Mod exclusive caculation
 					armor = 100;
 					passThrough = 0.1;
 				};
 				
 				class Chest {
 					hitpointName = "HitChest";
+					pen = 0.4; // Mod exclusive caculation
 					armor = 250;
 					passThrough = 0.1;
 				};
 				
 				class Diaphragm {
 					hitpointName = "HitDiaphragm";
+					pen = 0.4; // Mod exclusive caculation
 					armor = 250;
 					passThrough = 0.1;
 				};
 				
 				class Abdomen {
 					hitpointName = "HitAbdomen";
+					pen = 0.4; // Mod exclusive caculation
 					armor = 100;
 					passThrough = 0.1;
 				};
 				
 				class Pelvis {
 					hitpointName = "HitPelvis";
+					pen = 0.4; // Mod exclusive caculation
 					armor = 100;
 					passThrough = 0.1;
 				};
 				
 				class Body {
 					hitpointName = "HitBody";
+					pen = 0.4; // Mod exclusive caculation
 					armor = 100;
 					passThrough = 0.1;
 				};
